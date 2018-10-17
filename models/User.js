@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
+const useless = {};
+
 
 // Create Schema
 const UserSchema = new Schema({
