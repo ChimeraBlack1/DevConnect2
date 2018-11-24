@@ -11,12 +11,10 @@ class Login extends Component {
       errors: {}
     };
 
-    this.onChange = this.onChange.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
   }
 
 
-  onSubmit(e) {
+  onSubmit = (e) => {
     e.preventDefault();
 
     const user = {
@@ -28,7 +26,7 @@ class Login extends Component {
 
   }
 
-  onChange(e) {
+  onChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   }
 
